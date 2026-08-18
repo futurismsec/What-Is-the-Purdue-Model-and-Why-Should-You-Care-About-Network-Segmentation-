@@ -3,7 +3,9 @@ A practical breakdown of the Purdue Enterprise Reference Architecture, why it st
 
 **L; DR**
 
-The Purdue Model is a layered framework for organizing industrial networks from physical equipment on a factory floor up to enterprise IT systems so that critical control systems stay isolated from the internet-facing world. It was designed in the 1990s, long before "IT/OT convergence" was a phrase anyone used, but it's still the reference architecture most industrial network segmentation strategies are built on today. If you work anywhere near OT, ICS, or SCADA environments, understanding this model isn't optional — it's the mental map that makes network segmentation make sense.
+The Purdue Model is a layered framework for organizing industrial networks from physical equipment on a factory floor up to enterprise IT systems so that critical control systems stay isolated from the internet-facing world. It was designed in the 1990s, long before "IT/OT convergence" was a phrase anyone used, but it's still the reference architecture most industrial network segmentation strategies are built on today. If you work anywhere near OT, ICS, or SCADA environments, understanding this model isn't optional 
+
+it's the mental map that makes network segmentation make sense.
 
 Why this matters now
 
@@ -19,7 +21,9 @@ The framework organizes an industrial environment into a set of numbered levels,
 
 Level 5 — Enterprise Network        (corporate IT, ERP, email, internet access)
 Level 4 — Business Logistics       (business planning, scheduling, IT services)
+
 ────────────────────────────────── DMZ (Level 3.5) ──────────────────────────
+
 Level 3 — Operations Management     (MES, historians, plant-wide monitoring)
 Level 2 — Supervisory Control       (SCADA, HMI, control room systems)
 Level 1 — Basic Control             (PLCs, RTUs, control logic)
