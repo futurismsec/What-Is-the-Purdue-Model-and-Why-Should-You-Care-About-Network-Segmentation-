@@ -35,7 +35,7 @@ Level 0 — Physical Process          (sensors, actuators, valves, motors)
 
 A quick walk-through of what actually lives at each layer:
 
-Level 0 : Physical Process: The actual equipment. Sensors, valves, motors, actuators — the stuff that physically does something in the real world.
+Level 0 : Physical Process: The actual equipment. Sensors, valves, motors, actuators  the stuff that physically does something in the real world.
 
 Level 1: Basic Control: Programmable Logic Controllers (PLCs) and Remote Terminal Units (RTUs) that read from and command Level 0 devices in real time.
 
