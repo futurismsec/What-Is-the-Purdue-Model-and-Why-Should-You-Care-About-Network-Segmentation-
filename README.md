@@ -20,23 +20,33 @@ The Purdue Model, level by level
 The framework organizes an industrial environment into a set of numbered levels, typically visualized as a stack:
 
 Level 5 — Enterprise Network        (corporate IT, ERP, email, internet access)
+
 Level 4 — Business Logistics       (business planning, scheduling, IT services)
 
 ────────────────────────────────── DMZ (Level 3.5) ──────────────────────────
 
 Level 3 — Operations Management     (MES, historians, plant-wide monitoring)
+
 Level 2 — Supervisory Control       (SCADA, HMI, control room systems)
+
 Level 1 — Basic Control             (PLCs, RTUs, control logic)
+
 Level 0 — Physical Process          (sensors, actuators, valves, motors)
 
 A quick walk-through of what actually lives at each layer:
 
 Level 0 : Physical Process: The actual equipment. Sensors, valves, motors, actuators — the stuff that physically does something in the real world.
+
 Level 1: Basic Control: Programmable Logic Controllers (PLCs) and Remote Terminal Units (RTUs) that read from and command Level 0 devices in real time.
+
 Level 2: Supervisory Control: This is where SCADA systems and Human-Machine Interfaces (HMIs) live  the tools operators actually use to monitor and control processes.
+
 Level 3: Operations Management: Plant-wide systems like Manufacturing Execution Systems (MES) and data historians that aggregate information across the whole facility.
+
 Level 3.5: The DMZ: Not part of the original model but added in later revisions because it's essential in practice. This buffer zone is where IT and OT are allowed to talk to each other carefully, through controlled, monitored pathways without OT ever being directly exposed to Level 4/5 traffic.
+
 Level 4: Business Logistics: Corporate-facing systems like ERP, scheduling, and business planning tools.
+
 Level 5: Enterprise Network: Standard corporate IT  email, internet access, general business applications.
 
 The core idea is simple even if the diagram looks complex: traffic shouldn't jump straight from Level 5 down to Level 0. Every hop between layers should be deliberate, monitored, and restricted.
